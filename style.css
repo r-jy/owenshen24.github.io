@@ -1,9 +1,12 @@
 h1 {
     font-family: "Arial";
+    color:rgb(0, 130, 178);
 }
 
 p {
     font-family: "Arial";
+    font-weight: bold;
+    color:rgb(0, 130, 178);
 }
 
 img {
@@ -12,6 +15,12 @@ img {
 
 .form {
     font-family: "Arial";
+    font-weight: bold;
+    color:rgb(0, 130, 178);
+}
+
+.guessSubmit {
+    color:rgb(0, 130, 178);
 }
 
 body {

@@ -13,9 +13,9 @@ var resetButton;
 function checkGuess() {
   var userGuess = Number(guessField.value);
   if (guessCount === 1) {
-    guesses.textContent = 'Previous guesses: ';
+    guesses.textContent = 'Previ: <br>';
   }
-  guesses.textContent += userGuess + ' ';
+  guesses.textContent += userGuess + "<br>";
  
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations! You got it right!';
@@ -73,28 +73,28 @@ function resetGame() {
 
 
 
-
-
-
-
+//Improved code goes here
 var dialoguetimes = 1;
+var answers = document.querySelector('.answers');
+var questions = document.querySelector('.questions');
 
 function chat() {
     var userGuess = String(guessField.value);
     if (dialoguetimes === 1) {
-    guesses.textContent = 'Previous guesses: ';
+    answers.textContent += 'What do you want to do? | ';
+    questions.textContent = 'Great! Now what is step 1/3?';
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  answers.textContent += userGuess + '<br>';
 }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
