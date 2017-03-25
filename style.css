@@ -6,6 +6,14 @@ p {
     font-family: "Arial";
 }
 
+img {
+    width: 200px;
+}
+
 .form {
     font-family: "Arial";
+}
+
+body {
+    text-align: center;
 }
