@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+img {
+    width:200px;
+}
+
+a, .clockdiv {
+    text-decoration: none;
+    font-family: Futura;
+    color:rgb(183, 45, 78);
+}
+
+p {
+    line-height: 10px
+}
+
+.clockdiv {
+    font-size: 3em;
+}
+
+.button {
+    font-family: Futura;
+    background-color: rgb(183, 45, 78);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button:hover {
+        background-color: rgb(255, 58, 105);
+}
+
+.break {
+    height:50px;
+}
