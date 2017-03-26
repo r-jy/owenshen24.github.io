@@ -1,0 +1,81 @@
+/* Font and Color */
+h1, .menu, a, p {
+    font-family: "Futura";
+    color:rgb(0, 130, 178);
+    margin-left: 3%;
+    margin-bottom: 1%
+}
+
+h1 {
+    line-height: 1.8em;
+    font-size: 2.4em;
+}
+ 
+img {
+    width: 100px;
+}
+
+/*img:hover {
+    border:5px solid rgb(50, 130, 178);;
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+}*/
+
+.imgdesc {
+    font-family: "Futura";
+    font-size: 1.2em;
+    color: rgb(50, 130, 178);   
+    visibility: hidden;
+    width: 8em;
+}
+
+.planbot {
+    height:100px; 
+    width:100px;
+    margin-left: 3%;
+}
+
+.planbot:hover .imgdesc {
+    visibility: visible;
+    position:relative;
+    bottom: 25px;
+    left: -5px;
+}
+
+.border {
+    width:94%; 
+    margin-left: 3%;
+    margin-right: 3%;
+    height:5px; 
+    background: rgb(0, 130, 178);
+}
+
+.menu {
+    float: right;
+    width: 350px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    text-decoration: none;
+    font-weight: bold;
+    font-size:1.5em; 
+    padding-left: 1.2em;
+    display:inline;
+}
+
+a:hover {
+    color: rgb(100, 130, 178);
+}
+
+a {
+    text-decoration:none;
+}
+
+
+
