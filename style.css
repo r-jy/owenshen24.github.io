@@ -1,12 +1,11 @@
-h1 {
-    font-family: "Arial";
+/* Font and Color */
+h1, p, input, .form, .Submit, .reset {
+    font-family: "Futura";
     color:rgb(0, 130, 178);
 }
 
 p {
-    font-family: "Arial";
     font-weight: bold;
-    color:rgb(0, 130, 178);
 }
 
 .questions {
@@ -17,16 +16,19 @@ p {
     font-size: 1.5em;
 }
 
+input {
+    font-size:1.15em;
+    color:rgb(70, 127, 147);
+}
+
 img {
     width: 200px;
 }
 
 .form {
-    font-family: "Arial";
     font-weight: bold;
-    color:rgb(0, 130, 178);
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 1%;
     
     padding-top: 3%;
@@ -38,18 +40,16 @@ img {
 }
 
 
-.Submit, .reset {
-    color:rgb(0, 130, 178);
-}
-
 body {
     text-align: center;
 }
 
 .enter {
-    width: 50%;
+    width: 60%;
     padding-top: 1%;
     padding-bottom: 1%;
     word-wrap: break-word;
 }
+
+
 

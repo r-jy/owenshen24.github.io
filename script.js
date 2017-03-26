@@ -57,7 +57,7 @@ function chat() {
     else 
     if (times > 1) {
     answers.innerHTML += ('Step' + ' ' + (times-1) + ' | ' + ans + '<br>');
-    questions.innerHTML = 'What is Step ' + times + ' ?' + '<br>' + '(Type in "done" if done)';
+    questions.innerHTML = 'What is Step ' + times + '?' + '<br>' + '(Type in "done" if done)';
     clearThis(enter);
     }
     
