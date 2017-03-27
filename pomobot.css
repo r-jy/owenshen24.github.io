@@ -8,7 +8,7 @@ img {
 
 a, .clockdiv {
     text-decoration: none;
-    font-family: Futura;
+    font-family: 'Century Gothic';
     color:rgb(183, 45, 78);
 }
 
@@ -21,7 +21,7 @@ p {
 }
 
 .button {
-    font-family: Futura;
+    font-family: 'Century Gothic';
     background-color: rgb(183, 45, 78);
     border: none;
     border-radius: 20px;

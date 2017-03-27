@@ -3,8 +3,9 @@ var clockdiv = document.querySelector('.clockdiv');
 var Minutes = document.querySelector('.Minutes');
 var Seconds = document.querySelector('.Seconds');
 var Resetbutt = document.getElementById('reset');
+var congrats = document.querySelector('.congrats');
 var startover = false;
-var time = 25;
+var time = 2;
 
 function clock(val) {
     var endtime = val;
@@ -14,6 +15,7 @@ function clock(val) {
     Seconds.innerHTML = 'Seconds: '+t.seconds;
     if(t.total<=0){
       clearInterval(timeinterval);
+      victory();
     }
     if(startover === true){
       clearInterval(timeinterval);
@@ -48,7 +50,9 @@ function reset() {
 
 Resetbutt.addEventListener("click", reset);
 
-
+function victory() {
+    congrats.innerHTML = 'Hooray! You finished a pomodoro!';
+}
 
 
 
