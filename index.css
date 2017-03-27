@@ -1,6 +1,12 @@
+/* Figure out how to solve the menu thing where right now 'About' and 'Home'
+are unable to slide and adjust well, which is causing problems because
+they have a static position or something, and this is obviously subpar
+and not good.
+*/
+
 /* Font and Color */
 h1, .menu, a, p {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", Helvetica, sans-serif;
     color:rgb(0, 130, 178);
     margin-left: 3%;
     margin-bottom: 1%
@@ -30,7 +36,7 @@ img:hover {
 }
 
 .imgdesc {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", Helvetica, sans-serif;
     font-size: 1.2em;
     color: rgb(50, 130, 178);   
     visibility: hidden;
@@ -38,7 +44,7 @@ img:hover {
 }
 
 .redimgdesc {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", Helvetica, sans-serif;
     font-size: 1.2em;
     color: rgb(183, 45, 78);  
     visibility: hidden;
@@ -56,7 +62,7 @@ img:hover {
 .pomobot {
     height:100px; 
     width:100px;
-    margin-left: 3%;
+    margin-left: 8%;
     float:left;
     position: relative; 
     top: -5px;
@@ -73,7 +79,7 @@ img:hover {
     visibility: visible;
     position:relative;
     bottom: 20px;
-    left: -6px;
+    left: -8px;
 }
 
 .border {

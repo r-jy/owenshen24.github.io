@@ -5,7 +5,7 @@ var Seconds = document.querySelector('.Seconds');
 var Resetbutt = document.getElementById('reset');
 var congrats = document.querySelector('.congrats');
 var startover = false;
-var time = 2;
+var time = 25;
 
 function clock(val) {
     var endtime = val;
@@ -42,9 +42,14 @@ function startClock() {
 
 button.addEventListener("click", startClock);
 
+
+/* Consider doing a Pause and Reset Button for the
+current reset button instead of weird things.
+Then it justifies hitting the button twice. */
+
 function reset() {
     startover = true;
-    Minutes.innerHTML = 'Minutes: '+time;
+    Minutes.innerHTML = 'Minutes: '+25;
     Seconds.innerHTML = 'Seconds: '+0;
 }
 

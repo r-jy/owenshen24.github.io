@@ -1,6 +1,6 @@
 /* Font and Color */
 h1, p, input, .form, .Submit, .reset, a{
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", Helvetica, sans-serif;
     color:rgb(0, 130, 178);
 }
 
@@ -39,6 +39,7 @@ body {
 }
 
 .enter {
+    font-size: 1.75em;
     width: 60%;
     padding-top: 1%;
     padding-bottom: 1%;
