@@ -41,6 +41,7 @@ function chat() {
       if ((ans.toLowerCase().localeCompare(yes) === 0)) {
       questions.innerHTML = 'Congrats! You have problem-proofed your plan!';
       clearThis(enter);
+      hide();
       }
       if ((ans.toLowerCase().localeCompare(no) === 0)) {
       questions.innerHTML = 'What went wrong this time?';
@@ -74,6 +75,7 @@ enter.addEventListener("keyup", function(event) {
 Submit.addEventListener("click", chat);
 
 function resetAll() {
+  hide();
   questions.innerHTML = 'What do you want to do?';
   answers.innerHTML = " ";
   times = 1;
@@ -82,3 +84,11 @@ function resetAll() {
 
 reset.addEventListener("click", resetAll);
 
+function hide () {
+    var x = document.querySelector('.form')
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
