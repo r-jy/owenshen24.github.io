@@ -32,7 +32,7 @@ function chat() {
     else
     if (nextstep === 2) {
     answers.innerHTML += 'Solution: | ' + ans + '<br>';
-    questions.innerHTML = 'Imagine that it is one week later and your solution failed. Are you surprised? (Reply "yes" or "no)';
+    questions.innerHTML = 'Imagine that it is one week later and your solution failed! Do you really think your solution will work? (Reply "yes" or "no)';
     clearThis(enter);
     nextstep++;  
     }
