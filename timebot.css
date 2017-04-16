@@ -1,6 +1,14 @@
-h1, p, input, .form, .Submit, .reset, a{
+h1, p, input, .form, .Submit, .reset, a, ul{
     font-family: "Century Gothic", Helvetica, sans-serif;
-    color:rgb(102, 153, 153)
+    color:rgb(102, 153, 153);
+}
+
+.break {
+    color:rgb(183, 45, 78);
+}
+
+img {
+    width: 150px;
 }
 
 a {
@@ -41,6 +49,10 @@ body {
     margin: 4px 2px;
 }
 
+.make {
+    background-color: rgb(12, 153, 153);
+}
+
 .button:hover {
     background-color: rgb(51, 77, 77);
 }
@@ -60,17 +72,25 @@ body {
   50% { opacity: 1 }
 }
 
+
+/* Formatting for the schedule goes here */
+ul {
+    list-style-type: none;
+}
+
 .finalschedule {
     margin-left: 10%;
     text-align: left;
     font-weight: bold;
-    line-height: 1.1em;
-    font-size: 1.5em;
+    line-height: 2em;
+    font-size: 1.7em;
 }
 
-.schedule p:hover {
+.schedule li:hover {
     color: rgb(100, 130, 178);
 }
+
+
 
 
 

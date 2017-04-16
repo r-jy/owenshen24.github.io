@@ -117,7 +117,7 @@ function chunk(timeArray, taskArray) {
             timeArray[i] = timeArray[i] - (total-45);
             
             timeArray.splice(i+1, 0, 5);
-            taskArray.splice(i+1, 0, 'Break Time!');
+            taskArray.splice(i+1, 0, 'Take a break!');
             
             timeArray.splice(i+2, 0, (temp-timeArray[i]));
             taskArray.splice(i+2, 0, taskArray[i]);
@@ -160,6 +160,7 @@ function getTime(start, timeElaps) {
     return(starthrs + ":" + startmin + '-' + endhrs + ":" + endmin);
 }
 
+
 //This is the actual function that calls all the other stuff to make the function
 function makeSchedule() {
     let timeArray = estimates;
@@ -171,18 +172,31 @@ function makeSchedule() {
     chunk(timeArray, taskArray);
     for (let i = 0; i < timeArray.length; i++) {
         total += timeArray[i];
-        schedule.innerHTML += '<p>' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</p>';
+        if (taskArray[i] === 'Take a break!') {
+        schedule.innerHTML += '<li class= "schedule break">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</li>';    
+        }
+        else {
+        schedule.innerHTML += '<li class= "schedule"><a href ="#">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</a></li>';
         start += timeArray[i];
-    }
+    }}
     hide();
     hide2();
 }
 make.addEventListener("click", makeSchedule);
 
 
-function strikethrough() {
-    var ele = document.getElementsByClassName("finalschedule");
-}
+//This is the strike-through stuff
+document.querySelector("li").addEventListener("click", function (e) {
+    let li = e.target;
+    if (li.style.textDecoration === "none") {
+    li.style.textDecoration = "line-through";
+    }
+    else {
+        li.style.textDecoration = "none";
+    }
+});
+
+
 
 
 
