@@ -172,13 +172,9 @@ function makeSchedule() {
     chunk(timeArray, taskArray);
     for (let i = 0; i < timeArray.length; i++) {
         total += timeArray[i];
-        if (taskArray[i] === 'Take a break!') {
-        schedule.innerHTML += '<li class= "schedule break">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</li>';    
-        }
-        else {
         schedule.innerHTML += '<li class= "schedule"><a href ="#">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</a></li>';
         start += timeArray[i];
-    }}
+    }
     hide();
     hide2();
 }
