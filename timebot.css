@@ -3,10 +3,6 @@ h1, p, input, .form, .Submit, .reset, a, ul{
     color:rgb(102, 153, 153);
 }
 
-.break {
-    color:rgb(183, 45, 78);
-}
-
 img {
     width: 170px;
 }
@@ -89,6 +85,18 @@ ul {
 .schedule li:hover {
     color: rgb(100, 130, 178);
 }
+
+.break {
+    color:rgb(183, 45, 178);
+}
+
+
+
+
+
+
+
+
 
 
 

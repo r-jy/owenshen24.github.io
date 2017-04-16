@@ -172,7 +172,12 @@ function makeSchedule() {
     chunk(timeArray, taskArray);
     for (let i = 0; i < timeArray.length; i++) {
         total += timeArray[i];
-        schedule.innerHTML += '<li class= "schedule"><a href ="#">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</a></li>';
+        if (taskArray[i] === 'Take a break!') {
+            schedule.innerHTML += '<li class= "break">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</li>';
+        }
+        else {
+            schedule.innerHTML += '<li class= "schedule"><a href ="#">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</a></li>';
+        }
         start += timeArray[i];
     }
     hide();
@@ -184,13 +189,18 @@ make.addEventListener("click", makeSchedule);
 //This is the strike-through stuff
 document.querySelector("li").addEventListener("click", function (e) {
     let li = e.target;
+    
     if (li.style.textDecoration === "none") {
     li.style.textDecoration = "line-through";
+    li.style.opacity = "0.25";
     }
     else {
         li.style.textDecoration = "none";
+        li.style.opacity = "1.0";
     }
 });
+
+
 
 
 
