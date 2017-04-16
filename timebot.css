@@ -24,10 +24,10 @@ body {
 }
 
 .enter {
-    font-size: 1.25em;
-    width: 60%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    font-size: 1.75em;
+    width: 75%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     word-wrap: break-word;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 
-/*Animation to make the Make Schedule button look appealing*/
+/*Animation to make the Make Schedule button look like it's pulsing*/
 .make {
     -webkit-animation: fader 2s infinite  alternate;
     animation: fader 2s infinite  alternate;
