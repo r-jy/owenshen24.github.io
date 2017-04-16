@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="timebot.css" /> 
+    </head>
+    
+    <!-- For the buttons, take some cues from Pomo-Bot and make them look nicer-->
+    
+    <body>
+        
+        <a href="index.html">Home</a>
+        
+        <h1> Time-Bot </h1>
+        
+        <p></p>
+        
+        <!--This is the class wrapper so that stuff gets hidden -->
+        <div class = "hidden">
+            
+            <!-- This is where the questions show up-->
+        <p class = "questions">What is Task 1?</p>
+        
+            <!-- This is where the form is-->
+        <div class="form">
+            <label for="enter" >Enter Here:</label>
+            <input type="text" id="enter" class="enter">
+            <button type="Submit" class ="button Submit">Submit</button>
+        </div>
+        
+            <!-- This is for the responses / answers you type in real-time-->
+        <div class ="responses">
+          <p class ="answers"></p>
+        </div>
+        </div>
+        
+        <p></p>
+        
+        <!-- This is where the final schedule appears-->
+        <div class="finalschedule">
+            <p class ="schedule"></p>
+        </div>
+        
+        <!-- The two nice buttons come in here-->
+        <button class ="button reset">Reset</button>
+        <button class ="button make">MAKE SCHEDULE</button>
+        
+    </body>
+        <script src="timebot.js"></script>
+    
+</html>

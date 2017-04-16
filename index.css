@@ -88,6 +88,13 @@ img:hover {
     left: -8px;
 }
 
+.timebot:hover .imgdesc{
+    visibility: visible;
+    position:relative;
+    bottom: 20px;
+    left: -8px;
+}
+
 .border {
     width:94%; 
     margin-left: 3%;

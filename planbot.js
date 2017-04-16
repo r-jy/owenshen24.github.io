@@ -32,7 +32,7 @@ function chat() {
     else
     if (nextstep === 2) {
     answers.innerHTML += 'Solution: | ' + ans + '<br>';
-    questions.innerHTML = 'Imagine that it is one week later and your solution failed! Do you really think your solution will work? (Reply "yes" or "no)';
+    questions.innerHTML = 'Imagine that it is one week later and your solution failed! Do you really think your solution will work? (Enter "yes" or "no)';
     clearThis(enter);
     nextstep++;  
     }
@@ -58,7 +58,7 @@ function chat() {
     else 
     if (times > 1) {
     answers.innerHTML += ('Step' + ' ' + (times-1) + ' | ' + ans + '<br>');
-    questions.innerHTML = 'What is Step ' + times + '?' + '<br>' + '(Type in "done" if done)';
+    questions.innerHTML = 'What is Step ' + times + '?' + '<br>' + '(Enter "done" if done)';
     clearThis(enter);
     }
     
