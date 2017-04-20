@@ -149,8 +149,8 @@ function chunk(timeArray, taskArray) {
 
 //This is the initial Start Time
 let currTime = new Date(); 
-let minute =  Math.ceil(((currTime.getMinutes() + 10)%60)/10);
-let hour = currTime.getHours() + Math.floor((currTime.getMinutes() + 10)/60);
+let minute = Math.floor((Math.ceil((currTime.getMinutes()/10))*10)%60); 
+let hour = currTime.getHours() + Math.floor((currTime.getMinutes() + 5)/60); 
 let time = [];
 time.push(hour, minute);
 let startTime = time; //Apparently this is unsued, but it might be helpful in the future.
