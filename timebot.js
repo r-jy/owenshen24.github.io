@@ -13,7 +13,7 @@ let schedule = document.querySelector('.schedule');
 
 //These are the variables to keep the loop going when you're entering stuff
 let asktask = true;
-let asktime = false;
+
 
 
 //These are the arrays that I'll use to make the schedule
@@ -49,11 +49,42 @@ function hide2() {
 }
 
 
+
+
+//Defining the variables for break and work times
+let askWork = true;
+let askBreak = true;
+let multiplierVar = 1.25;
+let workTime = 45;
+let breakTime = 5;
+
+
+
+
+
 //The chatting function for inputs is here
 function chat() {
     
     let ans = String(enter.value);
     
+        if (askWork) {
+            questions.innerHTML = ('How long do you want your break? (Enter in minutes)');
+            askWork = false;
+            let num1 = parseInt(ans, 10);
+            workTime = num1;
+            answers.innerHTML += 'Work Time: ' + num1 + ' min'+ '<br>';
+            clearThis(enter);
+        }
+        else 
+        if (askBreak) {
+            questions.innerHTML = ('What is Task 1?');
+            askBreak = false;
+            let num2 = parseInt(ans, 10);
+            breakTime = num2;
+            answers.innerHTML += 'Work Time: ' + num2 + ' min'+ '<br>';
+            clearThis(enter);
+        }
+        else
         if (asktask) {
             questions.innerHTML = ('How long do you think it will take? (Enter in minutes)');
             counter++;
@@ -82,41 +113,30 @@ Submit.addEventListener("click", chat);
 
 
 
-//This is the reset button to restart planning
-function resetAll() {
-    questions.innerHTML = 'What is Task 1?';
-    answers.innerHTML = " ";
-    schedule.innerHTML = " ";
-    counter = 1;
-    tasks.length = 0
-    estimates.length = 0
-    hide();
-    hide2();
-}
-reset.addEventListener("click", resetAll);
-
-
-
 
 //Multiplier function to account for overconfident estimates
 function multiplier(arr) {
     for (let i = 0; i < arr.length; i++) {
-        arr[i] = Math.ceil((arr[i]*1.25)/10)*10;
+        arr[i] = Math.ceil((arr[i]*multiplierVar)/10)*10;
     }
 }
+
 
 //Displaying the array of times and updating the values
 function chunk(timeArray, taskArray) {
     let total = 0;
     
     for(let i = 0; i < timeArray.length; i++) {
-        total+= timeArray[i];
+        
+        if (taskArray[i] !== 'Take a break!') {
+          total+= timeArray[i];
+        }
 
-        if (total > 45) {
+        if (total > workTime) {
             let temp = timeArray[i];
-            timeArray[i] = timeArray[i] - (total-45);
+            timeArray[i] = timeArray[i] - (total-workTime);
             
-            timeArray.splice(i+1, 0, 5);
+            timeArray.splice(i+1, 0, breakTime);
             taskArray.splice(i+1, 0, 'Take a break!');
             
             timeArray.splice(i+2, 0, (temp-timeArray[i]));
@@ -129,56 +149,59 @@ function chunk(timeArray, taskArray) {
 
 //This is the initial Start Time
 let currTime = new Date(); 
-let minute = Math.floor((Math.ceil((currTime.getMinutes()/10))*10)%60); 
-let hour = currTime.getHours() + Math.floor((currTime.getMinutes() + 5)/60); 
+let minute =  Math.ceil(((currTime.getMinutes() + 5)%60)/10)*10;
+let hour = currTime.getHours() + Math.floor((currTime.getMinutes() + 10)/60);
+let time = [];
+time.push(hour, minute);
+let endTime = time;
 
 
 //This is the actual Get Time function
-function getTime(start, timeElaps) {
+function getTime(timeElaps) {
     
-    let starthrs = 0;
-    let startmin = 0;
-    let endhrs = 0;
-    let endmin = 0;
-    
-    starthrs = hour + Math.floor((start+minute)/60); 
-    startmin = Math.floor((minute + Math.floor(start%60))%60);
+    let starthrs = endTime[0];
+    let startmin = endTime[1];
     if (startmin < 10) {
         startmin = '0'+startmin;
     }
+    let startTimeString = (starthrs + ":" + startmin);
     
-    let startTime = (starthrs + ':' + startmin);
-    
-    endhrs = hour + Math.floor((timeElaps+minute)/60); 
-    endmin = Math.floor((minute + Math.floor(timeElaps%60))%60);
+    endTime[0] = hrParse(endTime[0],endTime[1], timeElaps);
+    endTime[1] = minParse(endTime[1], timeElaps);
+    let endhrs = endTime[0];
+    let endmin = endTime[1];
     if (endmin < 10) {
         endmin = '0'+endmin;
     }
+    let endTimeString = (endhrs + ":" + endmin);
     
-    let endTime = (endhrs + ":" + endmin);
+    let timeString = (startTimeString + " - " + endTimeString);
     
-    return(starthrs + ":" + startmin + '-' + endhrs + ":" + endmin);
+    return timeString;
+}
+
+function hrParse(hr, min, timeElaps) {
+    return (hr + Math.floor((min + timeElaps)/60));
+}
+
+function minParse(min, timeElaps) {
+    return ((min + timeElaps)%60);
 }
 
 
-//This is the actual function that calls all the other stuff to make the function
 function makeSchedule() {
     let timeArray = estimates;
     let taskArray = tasks;
-    let total = 0;
-    let start = 0;
     schedule.innerHTML += 'Schedule:' + '<br>';
     multiplier(timeArray);
     chunk(timeArray, taskArray);
     for (let i = 0; i < timeArray.length; i++) {
-        total += timeArray[i];
         if (taskArray[i] === 'Take a break!') {
-            schedule.innerHTML += '<li class= "break">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</li>';
+            schedule.innerHTML += '<li class= "break">' + getTime(timeArray[i]) + ' -> ' + taskArray[i] + '<br>'+ '</li>';
         }
         else {
-            schedule.innerHTML += '<li class= "schedule"><a href ="#">' + getTime(start, total, i) + ' -> ' + taskArray[i] + '<br>'+ '</a></li>';
+            schedule.innerHTML += '<li class= "schedule"><a href ="#">' + getTime(timeArray[i]) + ' -> ' + taskArray[i] + '<br>'+ '</a></li>';
         }
-        start += timeArray[i];
     }
     hide();
     hide2();
@@ -200,6 +223,22 @@ document.querySelector("li").addEventListener("click", function (e) {
     }
 });
 
+
+
+//This is the reset button to restart planning
+function resetAll() {
+    questions.innerHTML = 'How long do you want to work? (Enter in minutes)';
+    answers.innerHTML = " ";
+    schedule.innerHTML = " ";
+    askWork = true;
+    askBreak = true;
+    counter = 1;
+    tasks.length = 0;
+    estimates.length = 0;
+    hide();
+    hide2();
+}
+reset.addEventListener("click", resetAll);
 
 
 

@@ -82,12 +82,8 @@ ul {
     font-size: 1.7em;
 }
 
-.schedule li:hover {
-    color: rgb(100, 130, 178);
-}
-
 .break {
-    color:rgb(183, 45, 178);
+    color:rgb(183, 45, 128);
 }
 
 
