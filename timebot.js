@@ -81,7 +81,7 @@ function chat() {
             askBreak = false;
             let num2 = parseInt(ans, 10);
             breakTime = num2;
-            answers.innerHTML += 'Work Time: ' + num2 + ' min'+ '<br>';
+            answers.innerHTML += 'Break Time: ' + num2 + ' min'+ '<br>';
             clearThis(enter);
         }
         else
