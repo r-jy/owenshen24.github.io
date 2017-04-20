@@ -1,2 +1,4 @@
 # owenshen24.github.io
-Plan-Bot is a small web app that is a series of planning prompts to help you problem-proof your plans.
+This is a collection of little productivity bots. Plan-Bot helps you see where
+things can go wrong, while Time-Bot helps you make an automatic schedule.
+Just put in your times, and it'll make it for you!
