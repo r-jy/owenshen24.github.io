@@ -7,26 +7,19 @@
   font-family: "Avenir-Roman", "Century Gothic", Verdana, sans-serif;
 }
 
+.centered-items {
+  text-align: center;
+}
 
 .grid-wrapper1 {
   display: grid;
-  /*Edit the columns here if you want to add more buttons later on*/
-  grid-template-columns: 1fr 11fr;
+  grid-template-columns: 1fr 2fr 7fr 2fr;
   grid-column-gap:20px;
 }
 
 .grid-wrapper2 {
+  grid-template-columns: 1fr 3fr 1fr;
   display: grid;
-  /*Edit the columns here if you want to add more buttons later on*/
-  grid-template-rows: repeat(var(--number-of-buttons), 1fr);
-  grid-row-gap:20px;
-}
-
-.grid-wrapper3 {
-  display: grid;
-  /*Edit the columns here if you want to add more buttons later on*/
-  grid-template-rows: repeat(var(--number-of-buttons), 1fr);
-  grid-row-gap:20px;
 }
 
 
@@ -44,6 +37,10 @@
 
 .button-in-menu {
   height: 7.5em;
+}
+
+.image-in-desc {
+  height: 12em;
 }
 
 

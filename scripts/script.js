@@ -8,23 +8,18 @@ $(document).ready(function() {
 
 // This will make sure that all buttons are greyscale, and then make the selected one colored.
 
-  function removeGrayscale() {
+  function selectButton() {
+    // Alters the button color filters to show selection
     var clickedButton = $(this);
     $(".image-button").css('filter', 'grayscale(100%)');
     clickedButton.css('filter', 'grayscale(0%)');
-  }
-  $(".image-button").click(removeGrayscale);
 
-
-// Technically could be merged above, but this is separated for clarity. Shows the corresponding descriptive text with all the stuff.
-  function showText() {
+    // Shows the corresponding text box that goes with it
     var clickedButtonIndex = $(this).index();
     $(".desc-text").hide();
     $(".desc-text").eq(clickedButtonIndex).show();
-    //Figure out how to show the corresponding text box.
-    // $(".desc-text").hide();
   }
-    $(".image-button").click(showText);
+  $(".image-button").click(selectButton);
 
 
 })
