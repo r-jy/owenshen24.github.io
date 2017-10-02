@@ -3,9 +3,10 @@
   --number-of-buttons : 3
 }
 
-.hidden {
-  display: none;
+.defaultfont {
+  font-family: "Avenir-Roman", "Century Gothic", Verdana, sans-serif;
 }
+
 
 .grid-wrapper1 {
   display: grid;
@@ -29,19 +30,24 @@
 }
 
 
-
 .image-button {
   filter: grayscale(100%);
-  border: none;
   outline: none;
+  border: none;
   background: none;
   cursor: pointer;
 }
 
 .image-button:hover {
-  filter: grayscale(0%);
+  filter: grayscale(50%);
 }
 
 .button-in-menu {
   height: 7.5em;
+}
+
+
+/*Hides the text so they can all show up in sequence*/
+.desc-text {
+  display: none;
 }
