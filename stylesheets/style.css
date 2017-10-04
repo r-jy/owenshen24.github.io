@@ -1,50 +1,102 @@
-/*Variable declaration for the number of buttons*/
-:root {
-  --number-of-buttons : 3
+/*Button visuals stuff*/
+button {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color:#3abfd1;
+}
+a:hover {
+  color: #278491;
 }
 
-.defaultfont {
-  font-family: "Avenir-Roman", "Century Gothic", Verdana, sans-serif;
+
+/*Font stuff*/
+.title-font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+.parag-font {
+  font-family: 'Droid Sans', sans-serif;
+  line-height: 1.5em;
+}
+.large-size-font {
+  font-family: 'Arimo', sans-serif;
+  font-size: 3em;
+}
+.caption-text {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+.subtitle-link-font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
 }
 
+
+
+/*Centering boilerplate*/
 .centered-items {
   text-align: center;
 }
 
+
+/*Spacer*/
+.vertical-spacer {
+  height: 25px;
+}
+
+
+/*Grid stuff*/
 .grid-wrapper1 {
   display: grid;
-  grid-template-columns: 1fr 2fr 7fr 2fr;
+  grid-template-columns: 2fr 8fr 2fr;
   grid-column-gap:20px;
 }
 
-.grid-wrapper2 {
-  grid-template-columns: 1fr 3fr 1fr;
-  display: grid;
-}
 
 
+/*Image and button stylings*/
 .image-button {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   outline: none;
   border: none;
   background: none;
   cursor: pointer;
 }
-
 .image-button:hover {
   filter: grayscale(50%);
 }
-
 .button-in-menu {
   height: 7.5em;
 }
-
 .image-in-desc {
   height: 12em;
 }
+.circle-image {
+  border-radius: 50%;
+}
+.primer-image {
+  height:10em;
+}
 
-
-/*Hides the text so they can all show up in sequence*/
+/*Hides the text so they can all show up in sequence upon being clicked*/
 .desc-text {
   display: none;
+}
+
+
+/*Trying to be mobile-friendly. Buttons disappear, and all options appear on mobile*/
+@media (max-width:640px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
 }
