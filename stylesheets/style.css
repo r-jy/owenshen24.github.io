@@ -82,7 +82,8 @@ a:hover {
   border-radius: 50%;
 }
 .primer-image {
-  height:10em;
+  width:90%;
+  border: 0.2em solid black;
 }
 
 /*Hides the text so they can all show up in sequence upon being clicked*/
