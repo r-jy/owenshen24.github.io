@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
-// Initial selection of Owen Icon to be greyed out.
+  // Initial selection of Owen Icon to be greyed out.
   $(".initial-desc").show();
   $(".initial-selection").css('filter', 'grayscale(100%)');
 
+  // Hide the modal
+  $(".modal").hide();
 
   function selectButton() {
     // Alters the button color filters to show selection
@@ -18,5 +20,20 @@ $(document).ready(function() {
   }
   $(".image-button").click(selectButton);
 
+
+  // Show and hide image modals
+  function showModal() {
+    // On an image click, it opens up a modal:
+    var imagePath = $(this).prop('src');
+    $(".modal-image").attr("src", imagePath);
+    $(".modal").show();
+  }
+  $(".primer-image").click(showModal);
+  $(".death-image").click(showModal);
+
+  function hideModal() {
+    $(".modal").hide();
+  }
+  $(".close").click(hideModal);
 
 })
