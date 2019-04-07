@@ -15,26 +15,27 @@ a:hover {
 
 
 /*Font stuff*/
+div {
+  font-family: Roboto, Arial, sans-serif;
+}
+.title-font, .large-size-font {
+  font-family: Hind;
+  font-weight: 600;
+}
 .title-font {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.75em;
-  font-weight: bold;
 }
 .parag-font {
-  font-family: 'Droid Sans', sans-serif;
   line-height: 1.5em;
 }
 .large-size-font {
-  font-family: 'Arimo', sans-serif;
   font-size: 3em;
 }
 .caption-text {
-  font-family: 'Droid Sans', sans-serif;
   font-size: 0.85em;
   font-weight: bold;
 }
 .subtitle-link-font {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
 }
 
@@ -95,7 +96,7 @@ a:hover {
 }
 
 /*Hides the text so they can all show up in sequence upon being clicked*/
-.desc-text {
+.desc {
   display: none;
 }
 

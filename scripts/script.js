@@ -15,8 +15,8 @@ $(document).ready(function() {
 
     // Shows the corresponding text box that goes with it
     var clickedButtonIndex = $(this).index();
-    $(".desc-text").hide();
-    $(".desc-text").eq(clickedButtonIndex).show();
+    $(".desc").hide();
+    $(".desc").eq(clickedButtonIndex).show();
   }
   $(".image-button").click(selectButton);
 
@@ -36,4 +36,8 @@ $(document).ready(function() {
   }
   $(".close").click(hideModal);
 
+  // Show all text if window is resized:
+  $(window).resize(function(){
+    $(".desc").show();
+  });
 })
