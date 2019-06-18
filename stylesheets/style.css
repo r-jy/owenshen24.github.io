@@ -24,9 +24,11 @@ div {
 }
 .title-font {
   font-size: 1.75em;
+  color: #1d1d1d;
 }
 .parag-font {
   line-height: 1.5em;
+  font-size: 1.3rem;
 }
 .large-size-font {
   font-size: 3em;
@@ -37,6 +39,7 @@ div {
 }
 .subtitle-link-font {
   font-size: 1.5em;
+  font-weight: 600;
 }
 
 
@@ -71,7 +74,7 @@ div {
   cursor: pointer;
 }
 .image-button:hover {
-  filter: grayscale(50%);
+  filter:brightness(70%);
 }
 .button-in-menu {
   height: 7.5em;
@@ -88,6 +91,9 @@ div {
   height: auto;
   cursor: pointer;
 }
+.primer-image:hover {
+  filter:invert(15%);
+}
 .death-image {
   width:50%;
   border: 0.2em solid black;
@@ -98,6 +104,8 @@ div {
 /*Hides the text so they can all show up in sequence upon being clicked*/
 .desc {
   display: none;
+  max-width: 45rem;
+  margin: auto;
 }
 
 
@@ -116,27 +124,26 @@ div {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
     left: 0;
-    top: 0;
-    width: 100%; /* Full width */
+    top: 0; 
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%;
+    background-color: rgb(0,0,0);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-
-/* Modal Content (Image) */
-.modal-image {
+.modal-holder {
     margin: auto;
-    display: block;
-    width: 80%;
+}
+.modal-image {
+  max-height: 90vh;
+  max-width: 90vw;
 }
 
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
@@ -146,14 +153,7 @@ div {
 
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: rgb(167, 166, 166);
     text-decoration: none;
     cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-image {
-        height: 100%;
-    }
 }
