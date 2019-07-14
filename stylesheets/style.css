@@ -87,67 +87,22 @@ div {
 }
 .primer-image {
   width:90%;
-  border: 0.2em solid black;
+  border: 0.2rem solid black;
   height: auto;
   cursor: pointer;
 }
-.primer-image:hover {
-  filter:invert(15%);
-}
-.death-image {
+/* .death-image {
   width:50%;
   border: 0.2em solid black;
   height: auto;
   cursor: pointer;
-}
-figcaption {
-  font-size: 1.1rem;
-}
+} */
 
 /*Hides the text so they can all show up in sequence upon being clicked*/
 .desc {
   display: none;
   max-width: 45rem;
   margin: auto;
-}
-
-/* Modal properties */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0; 
-    height: 100%; /* Full height */
-    width: 100%;
-    background-color: rgb(0,0,0);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.modal-holder {
-    margin: auto;
-}
-.modal-image {
-  max-height: 90vh;
-  max-width: 90vw;
-}
-
-/* The close button */
-.close {
-    position: absolute;
-    top: 5px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: rgb(167, 166, 166);
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* For phone width */

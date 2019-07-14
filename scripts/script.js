@@ -4,9 +4,6 @@ $(document).ready(function() {
   $(".initial-desc").show();
   $(".initial-selection").css('filter', 'grayscale(100%)');
 
-  // Hide the modal
-  $(".modal").hide();
-
   let selection = $(".initial-selection");
 
   function selectButton() {
@@ -21,22 +18,6 @@ $(document).ready(function() {
     $(".desc").eq(clickedButtonIndex).show();
   }
   $(".image-button").click(selectButton);
-
-
-  // Show and hide image modals
-  function showModal() {
-    // On an image click, it opens up a modal:
-    var imagePath = $(this).prop('src');
-    $(".modal-image").attr("src", imagePath);
-    $(".modal").show();
-  }
-  $(".primer-image").click(showModal);
-  $(".death-image").click(showModal);
-
-  function hideModal() {
-    $(".modal").hide();
-  }
-  $(".close").click(hideModal);
 
   // Show all text if window is resized:
   $(window).resize(function(){
