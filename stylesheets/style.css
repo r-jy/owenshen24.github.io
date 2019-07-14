@@ -24,11 +24,11 @@ div {
 }
 .title-font {
   font-size: 1.75em;
-  color: #1d1d1d;
+  color: #3f3f3f;
 }
 .parag-font {
-  line-height: 1.5em;
   font-size: 1.3rem;
+  line-height: 1.5em;
 }
 .large-size-font {
   font-size: 3em;
@@ -57,7 +57,7 @@ div {
 
 
 /*Grid stuff*/
-.grid-wrapper1 {
+.grid {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
   grid-column-gap:20px;
@@ -77,7 +77,7 @@ div {
   filter:brightness(70%);
 }
 .button-in-menu {
-  height: 7.5em;
+  height: 8.5em;
 }
 .image-in-desc {
   height: 12em;
@@ -100,23 +100,15 @@ div {
   height: auto;
   cursor: pointer;
 }
+figcaption {
+  font-size: 1.1rem;
+}
 
 /*Hides the text so they can all show up in sequence upon being clicked*/
 .desc {
   display: none;
   max-width: 45rem;
   margin: auto;
-}
-
-
-/*Trying to be mobile-friendly. Buttons disappear, and all options appear on mobile*/
-@media (max-width:640px) {
-  .hidden-on-mobile {
-    display: none;
-  }
-  .show-on-mobile {
-    display: block;
-  }
 }
 
 /* Modal properties */
@@ -140,7 +132,7 @@ div {
   max-width: 90vw;
 }
 
-/* The Close Button */
+/* The close button */
 .close {
     position: absolute;
     top: 5px;
@@ -156,4 +148,24 @@ div {
     color: rgb(167, 166, 166);
     text-decoration: none;
     cursor: pointer;
+}
+
+/* For phone width */
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .parag-font {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+  }
+  .image-in-desc {
+    height: 8rem;
+  }
+  .hidden-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
 }
