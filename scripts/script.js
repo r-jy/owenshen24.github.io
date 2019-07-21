@@ -2,9 +2,9 @@ $(document).ready(function() {
 
   // Initial selection of Owen Icon to be greyed out.
   $(".initial-desc").show();
-  $(".initial-selection").css('filter', 'grayscale(100%)');
+  $(".start-icon").css('filter', 'grayscale(100%)');
 
-  let selection = $(".initial-selection");
+  let selection = $(".start-icon");
 
   function selectButton() {
     // Alters the button color filters to show selection
@@ -17,10 +17,12 @@ $(document).ready(function() {
     $(".desc").hide();
     $(".desc").eq(clickedButtonIndex).show();
   }
-  $(".image-button").click(selectButton);
+  $(".icon").click(selectButton);
 
   // Show all text if window is resized:
   $(window).resize(function(){
     $(".desc").show();
   });
 })
+
+

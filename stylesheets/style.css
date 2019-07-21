@@ -45,7 +45,7 @@ div {
 
 
 /*Centering boilerplate*/
-.centered-items {
+.centered {
   text-align: center;
 }
 
@@ -66,14 +66,14 @@ div {
 
 
 /*Image and button stylings*/
-.image-button {
+.icon {
   filter: grayscale(0%);
   outline: none;
   border: none;
   background: none;
   cursor: pointer;
 }
-.image-button:hover {
+.icon:hover {
   filter:brightness(70%);
 }
 .button-in-menu {
