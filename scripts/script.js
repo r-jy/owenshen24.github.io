@@ -1,28 +1,26 @@
-$(document).ready(function() {
+// Select initial selection and apply filter
+document.querySelector(".initial-desc").style.display = "block";
+let selection = document.querySelector(".start-icon");
+selection.style.filter = 'grayscale(100%)';
 
-  // Initial selection of Owen Icon to be greyed out.
-  $(".initial-desc").show();
-  $(".start-icon").css('filter', 'grayscale(100%)');
-
-  let selection = $(".start-icon");
-
-  function selectButton() {
-    // Alters the button color filters to show selection
-    selection.css('filter', '');
-    selection = $(this);
-    selection.css('filter', 'grayscale(100%)');
-
-    // Shows the corresponding text box that goes with it
-    var clickedButtonIndex = $(this).index();
-    $(".desc").hide();
-    $(".desc").eq(clickedButtonIndex).show();
-  }
-  $(".icon").click(selectButton);
-
-  // Show all text if window is resized:
-  $(window).resize(function(){
-    $(".desc").show();
+// Remove filter and update to new image
+function selectButton() {
+  selection.style.filter = '';
+  selection = this;
+  selection.style.filter = 'grayscale(100%)';
+  const index = [].indexOf.call(selection.parentElement.children, selection);
+  document.querySelectorAll(".desc").forEach((desc) => {
+    desc.style.display = 'none';
   });
-})
+  document.querySelectorAll(".desc")[index].style.display = 'block';
+}
+document.querySelectorAll(".icon").forEach((icon) => {
+  icon.addEventListener("click", selectButton);
+});
 
-
+// On resize, show all elements again (fixes resize bug where elements would be hidden until refresh)
+window.addEventListener("resize", function() {
+  document.querySelectorAll(".desc").forEach((desc) => {
+    desc.style.display = 'block';
+  });
+});

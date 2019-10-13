@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 271">
+  <defs/>
+  <g transform="translate(525 -4)">
+    <path fill="#29323f" stroke="#969696" stroke-linejoin="round" stroke-width="6" d="M-522 7h151v265h-151z"/>
+    <rect width="151.1" height="265.3" x="-371" y="7" fill="#fff" stroke="#969696" stroke-linejoin="round" stroke-width="6" ry="0"/>
+    <rect width="66.6" height="7.1" x="-498" y="25" fill="#74dddc" rx="3.5" ry="3.5"/>
+    <rect width="56.9" height="7.1" x="-498" y="53" fill="#a0a0a0" rx="3.5" ry="3.5"/>
+    <rect width="52.7" height="7.1" x="-498" y="80" fill="#d46969" rx="3.5" ry="3.5"/>
+    <rect width="91.3" height="7.1" x="-498" y="108" fill="#fff" rx="3.5" ry="3.5"/>
+    <rect width="49.4" height="7.1" x="-498" y="136" fill="#74dddc" rx="3.5" ry="3.5"/>
+    <rect width="103.5" height="7.1" x="-498" y="164" fill="#fff" rx="3.5" ry="3.5"/>
+    <rect width="58.5" height="7.1" x="-498" y="219" fill="#fff" rx="3.5" ry="3.5"/>
+    <rect width="73.9" height="7.1" x="-498" y="247" fill="#a0a0a0" rx="3.5" ry="3.5"/>
+    <rect width="103.5" height="7.1" x="-498" y="191" fill="#d46969" rx="3.5" ry="3.5"/>
+    <rect width="69" height="69" x="-357" y="4" fill="#29323f" stroke="#d9d9d9" stroke-linejoin="round" stroke-width="5" rx="3.5" ry="0" transform="rotate(-18)"/>
+    <rect width="53" height="53" x="-293" y="-227" fill="#f9abab" stroke="#d9d9d9" stroke-linejoin="round" stroke-width="3.8" rx="11.9" ry="14" transform="rotate(-71)"/>
+    <circle cx="-300.9" cy="-9.3" r="26.7" fill="#74dddc" stroke="#d9d9d9" stroke-linejoin="round" stroke-width="5" transform="rotate(-18)"/>
+  </g>
+</svg>
