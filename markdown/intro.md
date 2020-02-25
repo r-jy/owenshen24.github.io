@@ -1,0 +1,3 @@
+Hello! I'm an undergraduate studying computer science at UC San Diego. I'm interested in self-directed learning, statistical learning, productivity, and [how to do the most good in the world](https://www.effectivealtruism.com/). Also, I have a [blog](https://mlu.red).
+
+If you've found yourself here, maybe we should chat! You can reach me at **my github username at gmail**, or you can book a time [here](https://calendly.com/owenshen24/) on Calendly.

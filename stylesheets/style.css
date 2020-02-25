@@ -1,126 +1,137 @@
-/* Remove default button stylings */
-button {
-  outline: none;
-}
-button::-moz-focus-inner {
-  border: 0;
-}
-
-/* Link stylings */
 a {
-  color:#33aab9;
+  color: #3d79b4;
+  /* background-color: #ecf6ff; */
 }
+
 a:hover {
-  color: #1d6872;
+  color: #16487a;
+  /* background-color: #e3f1fd;
+  background-color: #ecf6ff;  */
 }
 
-/*Font stuff*/
-div {
-  font-family: Roboto, Arial, sans-serif;
-}
-.title-font, .large-size-font {
-  font-family: Hind, Arial, sans-serif;
-  font-weight: 600;
-}
-.title-font {
-  font-size: 1.75em;
-  color: #3f3f3f;
-}
-.parag-font {
-  font-size: 1.3rem;
-  line-height: 1.5em;
-}
-.large-size-font {
-  font-size: 3em;
-}
-.caption-text {
-  font-size: 0.85em;
-  font-weight: bold;
-}
-.subtitle-link-font {
-  font-size: 1.5em;
-  font-weight: 600;
+button {
+  cursor: pointer;
 }
 
+.icon-bar {
+  z-index: 1;
+  position: absolute;
+  width: 5rem;
+  right: 0;
+}
+.icon {
+  width: 3rem;
+  padding-bottom: 0.5rem;
+}
+.icon:hover {
+  filter: grayscale(75%);
+}
+@media only screen and (max-width: 750px) {
+  .icon-bar {
+    display: none;
+  }
+}
 
+.container {
+  max-width: 43rem;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  color: #2e2e2e;
+}
 
-/*Centering boilerplate*/
+.image-holder {
+  text-align: center;
+}
 .centered {
   text-align: center;
 }
 
-
-/*Spacer*/
-.vertical-spacer {
-  height: 25px;
-}
-
-
-/*Grid stuff*/
-.grid {
-  display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
-  grid-column-gap:20px;
-}
-
-
-
-/*Image and button stylings*/
-.icon {
-  filter: grayscale(0%);
-  outline: none;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-.icon:hover {
-  filter:brightness(70%);
-}
-.button-in-menu {
-  height: 8.5em;
-}
-.image-in-desc {
-  height: 12em;
-}
-.circle-image {
-  border-radius: 50%;
-}
-.primer-image {
-  width:90%;
-  border: 0.2rem solid black;
+#owen-face {
+  width: 13rem;
   height: auto;
-  cursor: pointer;
 }
-/* .death-image {
-  width:50%;
-  border: 0.2em solid black;
+
+#name-title {
+  font-size: 2.75rem;
+  margin-top: 0.65rem;
+  color: #000000;
+}
+
+#intro-text {
+  padding-left: 0.75rem;
+}
+
+#projects-title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  color: #292929;
+}
+.project-text {
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.button-link-holder {
+  display: flex;
+  text-align: center;
+}
+.button-link {
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin:auto;
+  width: 10rem;
+  background-color: #eeeeee;
+  border: 0.1rem solid #e2dddd;
+  font-weight: bold;
+  border-radius: 2px;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.button-link-logo {
+  width: 2rem;
   height: auto;
-  cursor: pointer;
+}
+/* .button-link {
+  background-color: #ecf6ff;
+  display: inline-block;
+  border: 0.1rem solid #d4e0eb;
+  width: 10rem;
+  margin-left: 1rem;
+}
+.button-link > a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+.button-link-icon {
+  width: 2rem;
+  height: auto;
 } */
 
-/*Hides the text so they can all show up in sequence upon being clicked*/
-.desc {
-  display: none;
-  max-width: 45rem;
-  margin: auto;
+.logo {
+  width: 8rem;
+  height: auto;
+}
+.item-title {
+  font-size: 1.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: -0.5rem;
 }
 
-/* For phone width */
-@media only screen and (max-width: 768px) {
-  .grid {
-    display: block;
-  }
-  .parag-font {
-    font-size: 1.1rem;
-    line-height: 1.5em;
-  }
-  .image-in-desc {
-    height: 8rem;
-  }
-  .hidden-on-mobile {
-    display: none;
-  }
-  .show-on-mobile {
-    display: block;
-  }
+#mlu-title {
+  color: rgb(170, 0, 22);
 }

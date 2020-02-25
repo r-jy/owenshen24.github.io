@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 572 572">
+  <defs/>
+  <g transform="rotate(-6 1648 -4690)">
+    <rect width="417.4" height="417.4" x="-462" y="-248" fill="#f3efef" rx="20.8" ry="20.8" transform="rotate(-35)"/>
+    <path fill="#928872" d="M-306-86v3l64 458v6l9-6-64-459-1-7z"/>
+    <circle cx="127.9" cy="375" r="40.9" fill="#c77ca5" stroke="#fff" stroke-width="7.9" transform="rotate(91)"/>
+    <circle cx="42.3" cy="335.7" r="29.9" fill="#c77ca5" stroke="#fff" stroke-width="7.9" transform="rotate(91)"/>
+    <circle cx="258.7" cy="301.4" r="19.5" fill="#c77ca5" stroke="#fff" stroke-width="7.9" transform="rotate(91)"/>
+    <path fill="#dceaeb" d="M-314-80l8-3-1-2zm16-11v7l64 459L45 177c9-7 11-20 5-29l-218-306c-7-10-20-12-29-5zm56 466l-3 8 3-2z"/>
+    <circle cx="-254.9" cy="102.5" r="29.9" fill="#5fb2bb" stroke="#fff" stroke-width="7.9" transform="rotate(-35)"/>
+    <circle cx="-133.3" cy="-63" r="48.9" fill="#5fb2bb" stroke="#fff" stroke-width="7.9" transform="rotate(-35)"/>
+    <circle cx="-228.8" cy="7.1" r="29.9" fill="#5fb2bb" stroke="#fff" stroke-width="7.9" transform="rotate(-35)"/>
+    <circle cx="-66.9" cy="247.8" r="19.5" fill="#5fb2bb" stroke="#fff" stroke-width="7.9" transform="rotate(91)"/>
+  </g>
+</svg>
