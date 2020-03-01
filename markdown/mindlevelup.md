@@ -1,5 +1,5 @@
-[mindlevelup](https://mlu.red/) is an ongoing sequence of blog posts that distill productivity into crystallized concepts.
+mindlevelup is an ongoing sequence of blog posts that aim to distill productivity and self-help concepts into crystallized essays.
 
-The blog used to be hosted on [Wordpress](https://mindlevelup.wordpress.com/), but I've now migrated to a nifty static site generator in Python of my own design. The code for both the blog posts and the generator can be found on [GitHub](https://github.com/owenshen24/golb/).
+The blog used to be hosted on [Wordpress](https://mindlevelup.wordpress.com/), but I've now migrated to a nifty static site generator I wrote in Python. The GitHub link featues both the static site generator as well as the blog posts.
 
-If you want an older version of the content on mindlevelup, you can read a book that's adapted from some of the blog posts [here](pdfs/ratbook.pdf)(~150 pages).
+If you want an older version to take on the go, I've also written a free [book](pdfs/ratbook.pdf) that clocks in at ~150 pages, which explores similar content.

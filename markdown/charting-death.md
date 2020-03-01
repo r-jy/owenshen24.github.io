@@ -1,0 +1,5 @@
+Charting Death is a data science project that examines the ways we die and compares that to newspaper mentions of the aforementioned causes of death. As one might expect, it turns out the certain causes of death (heart disease, kidney disease) are underrepresented in the news and others (homicide, terrorism) are overrepresented.
+
+A visualization based off this data by [Aaron Penne](http://aaronpenne.com/) is one of the [most upvoted post of all time](https://www.reddit.com/r/dataisbeautiful/comments/8cwcbu/cause_of_death_reality_vs_google_vs_media_oc/) on Reddit's r/dataisbeautiful subreddit, with 100,000+ upvotes and over 2 million views.
+
+It's also been covered by [Our World in Data](https://ourworldindata.org/does-the-news-reflect-what-we-die-from), [Bill Gates](https://twitter.com/BillGates/status/1138520780042465280), and [Hacker News](https://news.ycombinator.com/item?id=1684023).

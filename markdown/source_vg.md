@@ -1,0 +1,1 @@
+source_vg is a web app for editing SVG files. It supports directly editing the source code and previewing the resulting image, as well as uploading/downloading files.

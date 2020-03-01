@@ -15,31 +15,26 @@ button {
 
 .icon-bar {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   width: 5rem;
   right: 0;
 }
 .icon {
   width: 3rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .icon:hover {
   filter: grayscale(75%);
 }
-@media only screen and (max-width: 750px) {
-  .icon-bar {
-    display: none;
-  }
-}
 
 .container {
-  max-width: 43rem;
+  max-width: 41rem;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 1rem;
   color: #2e2e2e;
 }
@@ -59,7 +54,7 @@ button {
 #name-title {
   font-size: 2.75rem;
   margin-top: 0.65rem;
-  color: #000000;
+  color: #16438d;
 }
 
 #intro-text {
@@ -69,17 +64,23 @@ button {
 #projects-title {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #292929;
 }
+
 .project-text {
   padding-left: 1.5rem;
   padding-right: 0.5rem;
 }
+.project-item {
+  margin-bottom: 5rem;
+}
 
 .button-link-holder {
-  display: flex;
-  text-align: center;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 1rem;
 }
 .button-link {
   display: flex;
@@ -94,6 +95,7 @@ button {
 
   margin:auto;
   width: 10rem;
+  height: 1.5rem;
   background-color: #eeeeee;
   border: 0.1rem solid #e2dddd;
   font-weight: bold;
@@ -102,36 +104,67 @@ button {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.button-link-logo {
+
+.project-logo {
+  width: 1.5rem;
+  height: auto;
+  padding-right: 0.5rem;
+}
+.github-logo {
   width: 2rem;
   height: auto;
 }
-/* .button-link {
-  background-color: #ecf6ff;
-  display: inline-block;
-  border: 0.1rem solid #d4e0eb;
-  width: 10rem;
-  margin-left: 1rem;
-}
-.button-link > a {
+.button-link-wrapper > a {
   text-decoration: none;
-  color: #2e2e2e;
+  color: #3a3a3a;
 }
-.button-link-icon {
-  width: 2rem;
-  height: auto;
-} */
+.button-link:hover {
+  background-color: #e9e7e7;
+  border-color: #c4c4c4;
+}
 
 .logo {
-  width: 8rem;
-  height: auto;
+  height: 10rem;
+  width: auto;
 }
 .item-title {
   font-size: 1.75rem;
   margin-top: 0.25rem;
-  margin-bottom: -0.5rem;
+  margin-bottom: -0.25rem;
 }
 
+#perceptron-title {
+  color: rgb(109, 145, 156);
+}
 #mlu-title {
   color: rgb(170, 0, 22);
+}
+#charting-death-title {
+  color: rgb(34, 124, 151);
+}
+#primer-title {
+  color: rgb(105, 74, 39);
+}
+
+
+
+/* Mobile only css */
+@media only screen and (max-width: 760px) {
+  .container {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .project-text {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .button-link {
+    width: 9rem;
+  }
+}
+/* Hide icon bar earlier */
+@media only screen and (max-width: 800px) {
+  .icon-bar {
+    display: none;
+  }
 }
