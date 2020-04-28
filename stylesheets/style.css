@@ -1,12 +1,9 @@
 a {
   color: #3d79b4;
-  /* background-color: #ecf6ff; */
 }
 
 a:hover {
   color: #16487a;
-  /* background-color: #e3f1fd;
-  background-color: #ecf6ff;  */
 }
 
 button {
@@ -145,8 +142,6 @@ button {
 #primer-title {
   color: rgb(105, 74, 39);
 }
-
-
 
 /* Mobile only css */
 @media only screen and (max-width: 760px) {
