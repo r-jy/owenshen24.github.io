@@ -8,11 +8,22 @@ def replace_svg(file_path):
     imgs = soup.find_all("img")
     for i in imgs:
       img_url = i["src"]
+      img_url.replace("opt/", "")
       if os.path.splitext(img_url)[1] == ".svg":
-        class_name = i["class"]
+        try:
+          class_name = i["class"]
+        except KeyError:
+          class_name = None
+        try:
+          id = i["id"]
+        except KeyError:
+          id = None
         with open(i["src"], "r") as svg:
           svg_node = BeautifulSoup(svg.read(), features="lxml").find("svg")
-          svg_node["class"] = class_name
+          if class_name != None:
+            svg_node["class"] = class_name
+          if id != None:
+            svg_node["id"] = id
         i.replace_with(svg_node)
   return(soup.prettify(formatter="minimal"))
 

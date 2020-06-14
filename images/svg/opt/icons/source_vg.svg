@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 275">
-  <defs/>
-  <g transform="translate(501 -6)">
-    <rect width="283.6" height="274.6" x="-501" y="6" fill="#4d5d76" rx="31.4" ry="31.4"/>
-    <rect width="179" height="265.3" x="-501" y="7" fill="#29323f" rx="31.4" ry="31.4"/>
-    <rect width="143" height="265.3" x="-369" y="7" fill="#f5f9fe" rx="22.5" ry="32.2"/>
-    <g transform="translate(0 -9)">
-      <rect width="59.6" height="10.3" x="-477" y="47" fill="#74dddc" rx="3.5" ry="3.5"/>
-      <rect width="47.2" height="10.3" x="-477" y="95" fill="#d46969" rx="3.5" ry="3.5"/>
-      <rect width="81.8" height="10.3" x="-477" y="143" fill="#fff" rx="3.5" ry="3.5"/>
-      <rect width="66.2" height="10.3" x="-477" y="191" fill="#a0a0a0" rx="3.5" ry="3.5"/>
-      <rect width="95.2" height="10.3" x="-477" y="240" fill="#d46969" rx="3.5" ry="3.5"/>
-    </g>
-    <rect width="69" height="69" x="-357" y="4" fill="#29323f" rx="3.5" ry="3.5" transform="rotate(-18)"/>
-    <rect width="53" height="53" x="-293" y="-227" fill="#d46969" rx="11.9" ry="14" transform="rotate(-71)"/>
-    <circle cx="-300.9" cy="-9.3" r="26.7" fill="#74dddc" transform="rotate(-18)"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 275"><g transform="translate(501 -6)"><rect width="283.6" height="274.6" x="-501" y="6" fill="#4d5d76" rx="31.4" ry="31.4"/><rect width="179" height="265.3" x="-501" y="7" fill="#29323f" rx="31.4" ry="31.4"/><rect width="143" height="265.3" x="-369" y="7" fill="#f5f9fe" rx="22.5" ry="32.2"/><g transform="translate(0 -9)"><rect width="59.6" height="10.3" x="-477" y="47" fill="#74dddc" rx="3.5" ry="3.5"/><rect width="47.2" height="10.3" x="-477" y="95" fill="#d46969" rx="3.5" ry="3.5"/><rect width="81.8" height="10.3" x="-477" y="143" fill="#fff" rx="3.5" ry="3.5"/><rect width="66.2" height="10.3" x="-477" y="191" fill="#a0a0a0" rx="3.5" ry="3.5"/><rect width="95.2" height="10.3" x="-477" y="240" fill="#d46969" rx="3.5" ry="3.5"/></g><rect width="69" height="69" x="-357" y="4" fill="#29323f" rx="3.5" ry="3.5" transform="rotate(-18)"/><rect width="53" height="53" x="-293" y="-227" fill="#d46969" rx="11.9" ry="14" transform="rotate(-71)"/><circle cx="-300.9" cy="-9.3" r="26.7" fill="#74dddc" transform="rotate(-18)"/></g></svg>
