@@ -129,7 +129,9 @@ button {
   margin-top: 0.25rem;
   margin-bottom: -0.25rem;
 }
-
+#_0xmons-title {
+  color: rgb(52, 107, 99);
+}
 #perceptron-title {
   color: rgb(109, 145, 156);
 }
